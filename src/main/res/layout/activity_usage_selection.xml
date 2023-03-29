@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    tools:context=".UsageSelectionActivity">
+    <fragment
+        android:id="@+id/tipFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.threebro.computerguide.TipFragment"/>
+
+    <Button
+        android:id="@+id/gameBtn"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/nanum_square_b"
+        android:text="@string/game"
+        android:textSize="35dp"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/professionBtn"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/nanum_square_b"
+        android:text="@string/professional_work"
+        android:textSize="35dp"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/simpleWorkBtn"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/nanum_square_b"
+        android:text="Simple Work"
+        android:textSize="35dp"
+        android:textAllCaps="false"/>
+
+    <fragment
+        android:id="@+id/bottomBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.threebro.computerguide.BottomBarFragment"/>
+
+</LinearLayout>
